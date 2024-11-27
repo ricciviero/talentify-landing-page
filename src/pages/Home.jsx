@@ -4,6 +4,7 @@ import { DataSection } from "../components/DataSection";
 import { FocusSection } from "../components/FocusSection";
 import { AvatarsSection } from "../components/AvatarsSection";
 
+
 export const Home = () => {
     return (
         <>
