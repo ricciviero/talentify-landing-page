@@ -36,8 +36,8 @@ export const CardSection = () => {
 
                     <DefaultCard
                         emoticon="📈"
-                        label="Cresci professionalmente"
-                        text="Accedi a risorse esclusive per migliorare le tue competenze."
+                        label="Cresci"
+                        text="Accedi a risorse per migliorare le tue competenze."
                         className="min-h-[250px]"
                     />
 
