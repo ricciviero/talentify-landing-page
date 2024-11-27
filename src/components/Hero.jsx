@@ -1,4 +1,5 @@
 import { motion, useScroll, useTransform } from "framer-motion";
+import { useInView } from 'react-intersection-observer'; // Aggiungi questo import
 import { WhatsAppButton } from "./WhatsAppButton";
 import { Iphone } from "./Iphone";
 import { useEffect, useState } from "react";
@@ -6,6 +7,10 @@ import { useEffect, useState } from "react";
 export const Hero = () => {
     const { scrollY } = useScroll();
     const [isMobile, setIsMobile] = useState(false);
+    const { ref, inView } = useInView({
+        triggerOnce: true, // Fa in modo che l'animazione si attivi solo una volta
+        threshold: 0.2, // Attiva l'animazione quando almeno il 20% dell'elemento è visibile
+    });
 
     // Controlla se l'utente è su un dispositivo mobile
     useEffect(() => {
@@ -24,13 +29,13 @@ export const Hero = () => {
     const scale = useTransform(
         scrollY,
         [0, 600],
-        isMobile ? [3, 0.8] : [1, 0.5] // Da molto grande a piccolo per mobile
+        isMobile && inView ? [3, 0.8] : [1, 0.5] // Da molto grande a piccolo per mobile solo quando è in vista
     );
 
     const translateY = useTransform(
         scrollY,
         [0, 600],
-        isMobile ? [300, 0] : [0, 0] // Sposta verso il basso in partenza per mobile
+        isMobile && inView ? [300, 0] : [0, 0] // Sposta verso il basso in partenza per mobile solo quando è in vista
     );
 
     return (
@@ -61,7 +66,9 @@ export const Hero = () => {
 
                 <WhatsAppButton />
 
+                {/* Usa il ref per il movimento dell'iPhone */}
                 <motion.div
+                    ref={ref}  // Aggiungi il riferimento per il trigger di visibilità
                     className="mx-auto"
                     style={{
                         scale,
