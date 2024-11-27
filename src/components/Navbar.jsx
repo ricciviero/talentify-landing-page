@@ -9,7 +9,7 @@ export const Navbar = () => {
                 <div className="items-center flex">
                     <Link to="/">
                         <img
-                            src="../public/icon.png"
+                            src="../icon.png"
                             alt="Talentify"
                             className="w-10 h-10 mr-2"
                         />

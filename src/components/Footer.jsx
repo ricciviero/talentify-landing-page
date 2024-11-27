@@ -7,7 +7,7 @@ export const Footer = () => {
                 {/* Logo e Descrizione */}
                 <div className="mb-6 flex items-center justify-center">
                     <img
-                        src="./public/icon.png"
+                        src="./icon.png"
                         alt="Talentify Logo"
                         className="w-8 h-8 mr-2"
                     />
