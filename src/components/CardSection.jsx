@@ -6,8 +6,12 @@ export const CardSection = () => {
             <section className="w-full min-h-[400px] py-16 pl-8 pr-8">
                 <div className="container mx-auto px-4 max-w-6xl">
                     <div className="text-center space-y-4 mb-12">
-                        <h2 className="text-white text-4xl md:text-5xl font-bold leading-tight mb-8">
-                            Immagina una community di talenti pronta a connettersi con le migliori aziende.
+                        <h2 className="text-4xl md:text-5xl font-bold leading-tight mb-8 text-white text-center">
+                            Immagina una community di{" "}
+                            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-purple-500">
+                                developer
+                            </span>{" "}
+                            pronta a connettersi con le migliori aziende.
                         </h2>
                         <p className="text-white/80 text-lg max-w-3xl mx-auto">
                             Talentify è molto più di un gruppo Whatsapp: è un ecosistema pensato per valorizzare le tue competenze e aprirti nuove opportunità.

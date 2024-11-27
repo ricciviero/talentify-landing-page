@@ -8,7 +8,7 @@ export const FocusSection = () => {
                 </h2>
 
                 {/* Sottotitolo */}
-                <p className="text-xl md:text-2xl text-blue-400 mb-4">
+                <p className="text-xl md:text-2xl mb-4">
                     Dimentica tutto ciò che ti fa perdere tempo e concentrati solo sulle task di valore.
                     Candidati alle offerte di lavoro, a progetti da freelance, connettiti con professionisti del settore e molto altro.
                 </p>

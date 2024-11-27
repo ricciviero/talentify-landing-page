@@ -21,18 +21,14 @@ export const Navbar = () => {
 
                 <div className="items-end flex-row">
                     <DefaultButton
-                        label="Prenota una demo"
+                        label="Prenota una call"
+                        onClick={() => {
+                            window.open("https://cal.com/ricciviero/30min", "_blank", "noopener,noreferrer");
+                        }}
                     />
-
                 </div>
 
             </div>
-
-
-
-
-
-
         </nav>
     );
 };
