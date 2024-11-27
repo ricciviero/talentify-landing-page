@@ -38,7 +38,7 @@ export const Hero = () => {
             <div className="container mx-auto px-6 py-20 text-center">
                 <h1 className="text-5xl md:text-7xl font-bold mb-6">
                     La tua prossima opportunità di lavoro è su
-                    <span className="text-green-500"> Mobile</span>
+                    <span className="text-green-500"> Whatsapp</span>
                 </h1>
                 <p className="text-xl md:text-2xl mb-12 text-gray-300">
                     Se sei un
