@@ -5,6 +5,9 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { Navbar } from "./Navbar";
 import { Footer } from "./Footer";
 
+// Analytics
+import { Analytics } from "@vercel/analytics/react"
+
 
 // Pages
 import { Home } from "../pages/Home";
@@ -16,6 +19,7 @@ const App = () => {
   return (
     <>
       <Router>
+        <Analytics />
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
