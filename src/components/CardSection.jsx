@@ -38,6 +38,7 @@ export const CardSection = () => {
                         emoticon="📈"
                         label="Cresci professionalmente"
                         text="Accedi a risorse esclusive per migliorare le tue competenze."
+                        className="min-h-[250px]"
                     />
 
                 </div>

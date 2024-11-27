@@ -19,7 +19,7 @@ export const Navbar = () => {
                     </Link>
                 </div>
 
-                <div className="items-end flex-row">
+                <div className="items-end flex-row sm:ml-6"> {/* Aggiungi margine sinistro solo su mobile */}
                     <DefaultButton
                         label="Prenota una call"
                         onClick={() => {
