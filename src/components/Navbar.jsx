@@ -15,7 +15,7 @@ export const Navbar = () => {
                         />
                     </Link>
                     <Link to="/">
-                        <h1 className="text-2xl font-bold"> Talentify DEV MODE </h1>
+                        <h1 className="text-2xl font-bold"> Talentify</h1>
                     </Link>
                 </div>
 
