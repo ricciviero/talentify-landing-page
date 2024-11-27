@@ -15,11 +15,11 @@ export const Navbar = () => {
                         />
                     </Link>
                     <Link to="/">
-                        <h1 className="text-2xl font-bold"> Talentify DEV MODE</h1>
+                        <h1 className="text-2xl font-bold"> Talentify</h1>
                     </Link>
                 </div>
 
-                <div className="items-end flex-row">
+                <div className="items-end flex-row sm:ml-6"> {/* Aggiungi margine sinistro solo su mobile */}
                     <DefaultButton
                         label="Prenota una call"
                         onClick={() => {
