@@ -10,7 +10,7 @@ export const AvatarsSection = () => {
                     {/* Div del testo a sinistra */}
                     <div className="w-full md:w-1/2 text-center md:text-left mb-12 md:mb-0">
                         <h2 className="text-3xl md:text-4xl font-bold mb-6">
-                            Unisciti agli altri professionisti in Talentify
+                            Unisciti agli altri <br />professionisti in Talentify
                         </h2>
                         <p className="text-lg text-gray-300">
                             Connettiti con esperti del tuo settore e lasciati ispirare da chi, come te, punta a innovare e crescere ogni giorno.
