@@ -8,7 +8,7 @@ export const AvatarsSection = () => {
             <section className="bg-low-dark text-white py-16 px-6 rounded-2xl">
                 <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center">
                     {/* Div del testo a sinistra */}
-                    <div className="w-full md:w-1/2 text-center md:text-left mb-12 md:mb-0 pr-8">
+                    <div className="w-full md:w-1/2 text-center md:text-left mb-12 md:mb-0">
                         <h2 className="text-3xl md:text-4xl font-bold mb-6">
                             Unisciti agli altri professionisti in Talentify
                         </h2>
@@ -16,7 +16,7 @@ export const AvatarsSection = () => {
                             Connettiti con esperti del tuo settore e lasciati ispirare da chi, come te, punta a innovare e crescere ogni giorno.
                         </p>
 
-                        <div className="mt-8">
+                        <div className="mt-8 flex justify-center md:justify-start w-full">
                             <WhatsAppButton />
                         </div>
 
