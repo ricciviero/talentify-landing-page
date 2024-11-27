@@ -37,7 +37,7 @@ The **Talentify Landing Page** is a responsive and interactive web project desig
 ## 🌍 Deployment
 
 The project is live and accessible at:
-**[Talentify Landing Page](https://your-live-link.com)**
+**[Talentify Landing Page](https://talentify-community.vercel.app/)**
 
 ## 🤝 Contributing
 
