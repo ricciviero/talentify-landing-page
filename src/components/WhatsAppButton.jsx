@@ -5,7 +5,7 @@ export const WhatsAppButton = () => {
     return (
         <motion.button
             className="
-                inline-flex items-center justify-center px-6 py-3 text-base font-bold text-white bg-green-500 rounded-lg hover:bg-green-600
+                inline-flex items-center justify-center px-6 py-3 text-base font-bold text-white bg-green-500 rounded-xl hover:bg-green-600
                 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500 transition-colors duration-200 ease-in-out shadow-md
                 "
             onClick={() => {
