@@ -1,5 +1,5 @@
 import { motion, useScroll, useTransform } from "framer-motion";
-import { useInView } from 'react-intersection-observer'; // Aggiungi questo import
+import { useInView } from "react-intersection-observer"; // Aggiungi questo import
 import { WhatsAppButton } from "./WhatsAppButton";
 import { Iphone } from "./Iphone";
 import { useEffect, useState } from "react";
@@ -38,8 +38,19 @@ export const Hero = () => {
         isMobile && inView ? [300, 0] : [0, 0] // Sposta verso il basso in partenza per mobile solo quando è in vista
     );
 
+    // Animazione di entrata per la Hero
+    const fadeIn = {
+        hidden: { opacity: 0, y: 50 },  // Inizia invisibile e un po' più in basso
+        visible: { opacity: 1, y: 0, transition: { duration: 1, ease: "easeOut" } }  // Viene mostrato con un'animazione di dissolvenza e movimento
+    };
+
     return (
-        <div className="mt-12 min-h-screen">
+        <motion.div
+            className="mt-12 min-h-screen"
+            variants={fadeIn}  // Aggiungiamo l'animazione
+            initial="hidden"  // Impostiamo lo stato iniziale come nascosto
+            animate="visible" // Cambiamo allo stato visibile durante il caricamento
+        >
             <div className="container mx-auto px-6 py-20 text-center">
                 <h1 className="text-5xl md:text-7xl font-bold mb-6">
                     La tua prossima opportunità di lavoro è su
@@ -78,6 +89,6 @@ export const Hero = () => {
                     <Iphone />
                 </motion.div>
             </div>
-        </div>
+        </motion.div>
     );
 };
