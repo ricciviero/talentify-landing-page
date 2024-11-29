@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { WhatsAppButton } from "./WhatsAppButton";
+import { DiscordButton } from "./DiscordButton";
 import { avatars } from "../../back-end/avatars";
 import { useInView } from "react-intersection-observer";  // Importa l'Observer
 
@@ -18,7 +18,7 @@ export const AvatarsSection = () => {
 
     return (
         <motion.section
-            className="bg-low-dark text-white py-16 px-6 rounded-2xl relative overflow-hidden"
+            className="bg-low-dark text-white py-16 px-6 rounded-3xl relative overflow-hidden"
             variants={fadeIn}  // Aggiungiamo l'animazione
             initial="hidden"  // Impostiamo lo stato iniziale come nascosto
             animate={inView ? "visible" : "hidden"} // L'animazione avviene solo quando la sezione è visibile
@@ -35,7 +35,7 @@ export const AvatarsSection = () => {
                         Connettiti con esperti del tuo settore e lasciati ispirare da chi, come te, punta a innovare e crescere ogni giorno.
                     </p>
                     <div className="mt-8 flex justify-center md:justify-start w-full">
-                        <WhatsAppButton />
+                        <DiscordButton />
                     </div>
                 </div>
 
