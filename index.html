@@ -12,7 +12,7 @@
       new google.translate.TranslateElement({
         pageLanguage: 'it',
         includedLanguages: 'en,es,fr,de,pt,it',
-        autoDisplay: true
+        autoDisplay: false
       }, 'google_translate_element');
     }
   </script>
@@ -24,7 +24,10 @@
 
 <body>
   <div id="root"></div>
-  <div id="google_translate_element"></div>
+
+  <!-- Rimuovi o non includere il div per il widget di traduzione se non lo vuoi -->
+  <!-- <div id="google_translate_element"></div> -->
+
   <script type="module" src="/src/main.jsx"></script>
 </body>
 
