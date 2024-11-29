@@ -30,15 +30,15 @@ export const Navbar = () => {
                         <img
                             src="../icon.png"
                             alt="Talentify"
-                            className="w-10 h-10 mr-2"
+                            className="w-8 h-8 mr-2 sm:w-10 sm:h-10"  // Ridotto per mobile, maggiore per schermi più grandi
                         />
                     </Link>
                     <Link to="/">
-                        <h1 className="text-2xl font-bold"> Talentify</h1>
+                        <h1 className="text-xl sm:text-2xl font-bold"> Talentify</h1>  {/* Ridotto per mobile */}
                     </Link>
                 </div>
 
-                <div className="items-end flex-row sm:ml-6"> {/* Aggiungi margine sinistro solo su mobile */}
+                <div className="items-end flex-row sm:ml-6">
                     <DefaultButton
                         label="Prenota una call"
                         onClick={() => {
