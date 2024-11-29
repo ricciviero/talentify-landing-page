@@ -39,15 +39,15 @@ export const AvatarsSection = () => {
                     </div>
                 </div>
 
-                {/* Griglia degli avatar a destra */}
+                {/* Avatar grid on the right */}
                 <div className="w-full md:w-1/2 grid grid-cols-2 md:grid-cols-4 gap-6 gap-x-1">
                     {avatars.map((avatar) => (
                         <motion.div
                             key={avatar.id}
-                            className="flex justify-center"
+                            className="flex justify-center relative"
                             whileHover={{
-                                scale: 1.1, // Ingrandisce leggermente l'avatar
-                                rotate: 5, // Aggiunge una piccola rotazione
+                                scale: 1.1,
+                                rotate: 5,
                             }}
                             transition={{
                                 type: "spring",
@@ -55,9 +55,10 @@ export const AvatarsSection = () => {
                                 damping: 10,
                             }}
                         >
+                            <div className="absolute inset-0 bg-gradient-to-r from-purple-400 to-blue-500 rounded-full blur-lg opacity-75" />
                             <img
                                 src={avatar.img}
-                                className="w-24 h-24"
+                                className="w-24 h-24 relative z-10"
                                 alt={`Avatar ${avatar.id}`}
                             />
                         </motion.div>
@@ -67,4 +68,3 @@ export const AvatarsSection = () => {
         </motion.section>
     );
 };
-
