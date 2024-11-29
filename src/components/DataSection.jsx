@@ -16,7 +16,7 @@ export const DataSection = () => {
 
     return (
         <motion.section
-            className="bg-low-dark text-white py-16 px-4 rounded-2xl"
+            className="bg-low-dark text-white py-16 px-4 rounded-3xl"
             variants={fadeIn}  // Aggiungiamo l'animazione
             initial="hidden"  // Impostiamo lo stato iniziale come nascosto
             animate={inView ? "visible" : "hidden"} // L'animazione avviene solo quando la sezione è visibile

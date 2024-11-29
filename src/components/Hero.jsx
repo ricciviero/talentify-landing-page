@@ -1,6 +1,6 @@
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useInView } from "react-intersection-observer"; // Aggiungi questo import
-import { WhatsAppButton } from "./WhatsAppButton";
+import { DiscordButton } from "./DiscordButton";
 import { Iphone } from "./Iphone";
 import { useEffect, useState } from "react";
 
@@ -54,7 +54,7 @@ export const Hero = () => {
             <div className="container mx-auto px-6 py-20 text-center">
                 <h1 className="text-5xl md:text-7xl font-bold mb-6">
                     La tua prossima opportunità di lavoro è su
-                    <span className="text-green-500"> Whatsapp</span>
+                    <span className="text-[#5965F2]"> Discord</span>
                 </h1>
                 <p className="text-xl md:text-2xl mb-12 text-gray-300">
                     Se sei un
@@ -75,7 +75,10 @@ export const Hero = () => {
                     e candidarti ai progetti più innovativi, ora hai tutto a portata di chat.
                 </p>
 
-                <WhatsAppButton />
+
+
+
+                <DiscordButton />
 
                 {/* Usa il ref per il movimento dell'iPhone */}
                 <motion.div
