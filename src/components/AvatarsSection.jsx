@@ -64,8 +64,7 @@ export const AvatarsSection = () => {
                     ))}
                 </div>
             </div>
-        </section>
-        </>
+        </motion.section>
     );
 };
 
