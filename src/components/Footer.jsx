@@ -23,6 +23,13 @@ export const Footer = () => {
                     <Link to="/privacy" className="text-blue-500 underline">
                         Privacy Policy
                     </Link>
+                    <p className="text-sm">
+                        Made with ❤️ by <a href="https://www.linkedin.com/in/riccardo-civiero-13b2a312b/"
+                            className="text-blue-500 underline"
+                        >
+                            ricciviero
+                        </a>
+                    </p>
                 </div>
             </div>
         </footer>
