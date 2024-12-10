@@ -24,7 +24,7 @@ export const Footer = () => {
                         Privacy Policy
                     </Link>
                     <p className="text-sm">
-                        Made with ❤️ by <a href="https://www.linkedin.com/in/riccardo-civiero-13b2a312b/"
+                        Made with ❤️ by <a href="https://ricciviero.vercel.app/" target="_blank"
                             className="text-blue-500 underline"
                         >
                             ricciviero
