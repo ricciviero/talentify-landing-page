@@ -12,6 +12,9 @@ import { Analytics } from "@vercel/analytics/react"
 // Pages
 import { Home } from "../pages/Home";
 import { PrivacyPolicy } from "../pages/PrivacyPolicy";
+import { LogIn } from "../pages/LogIn";
+
+
 
 const App = () => {
 
@@ -24,6 +27,7 @@ const App = () => {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/privacy" element={<PrivacyPolicy />} />
+          <Route path="/login" element={<LogIn />} />
         </Routes>
         <Footer />
       </Router>

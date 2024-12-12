@@ -40,9 +40,9 @@ export const Navbar = () => {
 
                 <div className="items-end flex-row sm:ml-6">
                     <DefaultButton
-                        label="Prenota una call"
+                        label="Accedi"
                         onClick={() => {
-                            window.open("https://cal.com/ricciviero/30min", "_blank", "noopener,noreferrer");
+                            window.open("/login", "_blank", "noopener,noreferrer");
                         }}
                     />
                 </div>
