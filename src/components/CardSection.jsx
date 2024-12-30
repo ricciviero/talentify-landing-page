@@ -34,7 +34,7 @@ export const CardSection = () => {
                             pronta a connettersi con le migliori aziende.
                         </h2>
                         <p className="text-white/80 text-lg max-w-3xl mx-auto">
-                            Talentify è molto più di un server Discord: è un ecosistema pensato per valorizzare le tue competenze e aprirti nuove opportunità.
+                            Talentifier è molto più di un server Discord: è un ecosistema pensato per valorizzare le tue competenze e aprirti nuove opportunità.
                             Immagina di far parte di una community dove il tuo talento è il protagonista, un luogo in cui puoi connetterti con aziende innovative, collaborare con professionisti del tuo settore e accedere a risorse che ti permettono di crescere e migliorare ogni giorno.
                         </p>
                     </div>

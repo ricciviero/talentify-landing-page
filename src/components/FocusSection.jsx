@@ -25,7 +25,7 @@ export const FocusSection = () => {
             <div className="max-w-4xl mx-auto text-center">
                 {/* Titolo principale */}
                 <h2 className="text-4xl md:text-5xl font-bold leading-tight mb-6">
-                    Cosa non dovrai più fare se usi Talentify?
+                    Cosa non dovrai più fare se usi Talentifier?
                 </h2>
 
                 {/* Sottotitolo */}

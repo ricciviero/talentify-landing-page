@@ -34,7 +34,7 @@ export const Navbar = () => {
                         />
                     </Link>
                     <Link to="/">
-                        <h1 className="text-xl sm:text-2xl font-bold"> Talentify</h1>  {/* Ridotto per mobile */}
+                        <h1 className="text-xl sm:text-2xl font-bold"> Talentifier</h1>  {/* Ridotto per mobile */}
                     </Link>
                 </div>
 
