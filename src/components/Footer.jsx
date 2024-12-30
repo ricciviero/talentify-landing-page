@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import RicTag from "./RicTag";
 
 export const Footer = () => {
     return (
@@ -23,13 +24,11 @@ export const Footer = () => {
                     <Link to="/privacy" className="text-blue-500 underline">
                         Privacy Policy
                     </Link>
-                    <p className="text-sm">
-                        Made with ❤️ by <a href="https://www.ricciviero.dev/" target="_blank"
-                            className="text-blue-500 underline"
-                        >
-                            ricciviero
-                        </a>
-                    </p>
+
+                    <div className="flex justify-center">
+                        <RicTag />
+                    </div>
+
                 </div>
             </div>
         </footer>
